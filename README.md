@@ -1,8 +1,13 @@
-# Group TEAM_NUMBER
-Group Name: TEAM_NAME
+# Group 35
+Group Name: TATrainer
 
 [MVP Link](http://cs196.cs.illinois.edu)
 
-Team Members: STUDENTS_NETIDS
+Team Members: 
+- aykamel2
+- arnav9
+- rhand7
+- vmadhan2
 
-Project Manager: PM_NETID
+Project Manager: dhruvks2
+
