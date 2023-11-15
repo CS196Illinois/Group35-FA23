@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>TrendifyStocks - Lessons </title>
+        <link rel="stylesheet" type="text/css" href= "../static/lessons.css">
+    </head>
+    <body>
+        <header>
+            <nav class="sticky">
+                <img src="../static/profilePic.jpg" alt="Profile Picture" class="profile-icon">
+                <div class="welcome-message">
+                    Welcome, [Username]!
+                </div>            
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#">Lessons</a></li>
+                    <li><a href="practice.html">Practice</a></li>
+                    <li><a href="#">Current Trends</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1 class="orange-title">Lessons</h1>
+            <p class="apple">Apple</p>
+            <p class="microsoft">Microsoft</p>
+            <p class="amazon">Amazon</p>
+            <img src="../static/apple.jpg" alt="Apple" class="applelogo">
+            <img src="../static/microsoft.png" alt="Microsoft" class="microsoftlogo">
+            <img src="../static/amazon.png" alt="Amazon" class="amazonlogo">
+            <div class="button-container">
+                <form method="POST" action="/lessons">
+                    <!-- Apple Button -->
+                    <input type="hidden" name="lesson_type" value="Apple">
+                    <button type="submit">Learn About Apple!</button>
+                </form>
+                <form method="POST" action="/lessons">
+                    <!-- Microsoft Button -->
+                    <input type="hidden" name="lesson_type" value="Microsoft">
+                    <button type="submit" name="text" value="Microsoft">Learn About Microsoft!</button>
+                </form>
+                <form method="POST" action="/lessons">
+                    <!-- Amazon Button -->
+                    <input type="hidden" name="lesson_type" value="Amazon">
+                    <button type="submit" name="text" value="Amazon">Learn About Amazon!</button>
+                </form>
+            </div>
+            <p class="facebook">Facebook</p>
+            <p class="walmart">Walmart</p>
+            <img src="../static/facebook.png" alt="Facebook" class="facebooklogo">
+            <img src="../static/walmart.jpg" alt="Walmart" class="walmartlogo">
+            <div class="button-container">
+                <form method="POST" class="new-button" action="/lessons">
+                    <!-- Facebook Button -->
+                    <input type="hidden" name="lesson_type" value="Facebook">
+                    <button type="submit" name="text" value="Facebook">Learn About Facebook!</button>
+                </form>
+                <form method="POST" class="new-button" action="/lessons">
+                    <!-- Walmart Button -->
+                    <input type="hidden" name="lesson_type" value="Walmart">
+                    <button type="submit" name="text" value="Walmart">Learn About Walmart!</button>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>
