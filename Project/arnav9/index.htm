@@ -1,15 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href = "main.css">
 <title>Stock/quizz/main_page</title>
-<link rel="stylesheet" href = "main.css" type = "text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
-<h1 style = "text-align : center;">Welcome to ProjectName!</h1>
-<h2 style = "text-align : center";>A fun and easy way to learn about Stocks</h2>
-<button class = "button button1">Login</button>
-<button class = "button button2">Register</button>
+<h1 style = "text-align : center;">Welcome to Trendify Stocks!</h1>
+<h2 style = "text-align : center;">A fun way to learn about stocks</h2>
+
+<button class= "button" id="Login">Login</button>
+
+<div id="myModal" class="modal">
+
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <form action="Send Here" method="get">
+      <label for="uname">Username:</label>
+      <input type="text" id="uname" name="uname"><br><br>
+      <label for="psw">Password:</label>
+      <input type="text" id="psw" name="psw"><br><br>
+      <button type="submit" value="submit">Submit</button>
+    </form>
+
+  </div>
+
+</div>
+
+
+<button class= "button" id="Register">Register</button>
+
+<div id="myModal2" class="modal">
+
+  
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <form action="Send Here 2" method="get">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname"><br><br>
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname"><br><br>
+      <label for="uname">Username:</label>
+      <input type="text" id="uname" name="uname"><br><br>
+      <label for="psw">Password:</label>
+      <input type="text" id="psw" name="psw"><br><br>
+      <button type="submit" value="submit">Submit</button>
+    </form>
+
+  </div>
+
+</div>
+
+
+<script
+var modal = document.getElementById("myModal");
+
+
+var btn = document.getElementById("Login");
+
+
+var span = document.getElementsByClassName("close")[0];
+
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+  modal.style.display = "none";
+  }
+}
+</script>
 
 </body>
 </html>
