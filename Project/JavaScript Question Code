@@ -1,0 +1,16 @@
+document.addEventListener('DOMContentLoaded', function () {
+    const submitButton = document.getElementById('submit-button');
+    const quizForm = document.getElementById('quiz-form');
+    const message = document.getElementById('message');
+
+    submitButton.addEventListener('click', function () {
+        const correctChoice = quizForm.querySelector('input[type="radio"][data-correct="true"]:checked');
+        if (correctChoice) {
+            message.textContent = 'Correct!';
+            message.style.color = 'green';
+        } else {
+            message.textContent = 'Incorrect, try again!';
+            message.style.color = 'red'
+        }
+    });
+});
