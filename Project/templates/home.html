@@ -6,15 +6,14 @@
     <body>
         <header>
             <nav class="sticky">
-<!--                 <img src="../static/profilePic.jpg" alt="Profile Picture" class="profile-icon"> -->
                 <div class="welcome-message">
                     Welcome, {{user}}!
                 </div>            
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="lessons.html">Lessons</a></li>
-                    <li><a href="practice.html">Practice</a></li>
-                    <li><a href="#">Current Trends</a></li>
+                    <li><a href="{{ url_for('lessons') }}">Lessons</a></li>
+                    <li><a href="{{ url_for('practice') }}">Practice</a></li>
+                    <li><a href="#">              </a></li>
                 </ul>
             </nav>
         </header>
