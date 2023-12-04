@@ -1,29 +1,29 @@
 <html>
     <head>
-        <title>TrendifyStocks - Lessons </title>
+        <title>TrendifyStocks - Practice </title>
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='practice.css') }}">
     </head>
     <body>
         <header>
             <nav class="sticky">
                 <div class="welcome-message">
-                    Welcome, [Username]!
+                    Welcome!
                 </div>            
                 <ul>
                     <li><a href="{{ url_for('home') }}">Home</a></li>
                     <li><a href="{{ url_for('lessons') }}">Lessons</a></li>
-                    <li><a href="practice.html">Practice</a></li>
+                    <li><a href="#">Practice</a></li>
                     <li><a href="#">              </a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <h1 class="orange-title">Lessons</h1>
+            <h1 class="orange-title">Practice</h1>
 
             <div display = "inline-block"> 
                 <p class = "apple">Apple</p>
                 <img src="../static/Apple-Logo.png" alt="Apple" class="applelogo">
-                <form method="POST" action="/lessonsfn">
+                <form method="POST" action="/practicefn">
                     <!-- Apple Button -->
                     <input type="hidden" name="lesson_type" value="Apple">
                     <button type="submit">Learn About Apple!</button>
@@ -33,7 +33,7 @@
             <div display = "inline-block"> 
                 <p class = "microsoft">Microsoft</p>
                 <img src="../static/microsoft.png" alt="Microsoft" class="microsoftlogo">
-                <form method="POST" action="/lessonsfn">
+                <form method="POST" action="/practicefn">
                     <!-- Microsoft Button -->
                     <input type="hidden" name="lesson_type" value="Microsoft">
                     <button type="submit" name="text" value="Microsoft">Learn About Microsoft!</button>
@@ -43,7 +43,7 @@
             <div display = "inline-block"> 
                 <p class = "amazon">Amazon</p>
                 <img src="../static/Amazon_logo.svg.png" alt="Amazon" class="amazonlogo">
-                <form method="POST" action="/lessonsfn">
+                <form method="POST" action="/practicefn">
                     <!-- Amazon Button -->
                     <input type="hidden" name="lesson_type" value="Amazon">
                     <button type="submit" name="text" value="Amazon">Learn About Amazon!</button>
@@ -53,7 +53,7 @@
             <div display = "inline-block"> 
                 <p class = "facebook">Facebook</p>
                 <img src="../static/facebook.png" alt="Facebook" class="facebooklogo">
-                <form method="POST" action="/lessonsfn">
+                <form method="POST" action="/practicefn">
                     <!-- Facebook Button -->
                     <input type="hidden" name="lesson_type" value="Facebook">
                     <button type="submit" name="text" value="Facebook">Learn About Facebook!</button>
@@ -63,7 +63,7 @@
             <div display = "inline-block"> 
                 <p class = "walmart">Walmart</p>
                 <img src="../static/walmart.jpg" alt="Walmart" class="walmartlogo">
-                <form method="POST" action="/lessonsfn">
+                <form method="POST" action="/practicefn">
                     <!-- Walmart Button -->
                     <input type="hidden" name="lesson_type" value="Walmart">
                     <button type="submit" name="text" value="Walmart">Learn About Walmart!</button>
