@@ -81,6 +81,8 @@ nav ul li a {
 
 /* Adjust styles for the buttons */
 button {
+    position: relative;
+    left: 29%;
     height: 45px;
     width: 150px; /* Adjust the width of the buttons */
     font-family: Verdana, sans-serif;
