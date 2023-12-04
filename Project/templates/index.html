@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock/quiz/main_page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}" type = "text/css">
+    <script type='text/javascript' src="{{ url_for('static', filename='scripts.js') }}"></script>
+</head>
+    <body>
+
+<h1 style = "text-align : center;">Welcome to Trendify Stocks!</h1>
+<h2 style = "text-align : center;">A fun way to learn about stocks</h2>
+
+<button class= "button" id="Login" onclick="openLoginModalWindow()">Login</button>
+
+<div id="myModal" class="modal">
+
+  <div class="modal-content">
+      <button type="button" class="close" name="close" onclick="closeLoginModalWindow()">
+          <strong>&times;</strong>
+        </button>
+
+    <form action="/login" method="POST">
+      <label for="uname">Username:</label>
+      <input type="text" id="uname" name="uname"><br><br>
+      <label for="psw">Password:</label>
+          <input type="password" id="psw" name="psw"><br><br>
+      <button type="submit" value="submit">Submit</button>
+    </form>
+
+  </div>
+
+</div>
+
+
+<button class= "button" id="Register" onclick="openRegisterModalWindow()">Register</button>
+
+<div id="myModal2" class="modal">
+  <div class="modal-content">
+            <button type="button" class="close" name="close" onclick="closeRegisterModalWindow()">
+          <strong>&times;</strong>
+        </button>
+
+    <form action="/register" method="POST">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname"><br><br>
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname"><br><br>
+      <label for="uname">Username:</label>
+      <input type="text" id="uname" name="uname"><br><br>
+      <label for="psw">Password:</label>
+      <input type="password" id="psw" name="psw"><br><br>
+      <button type="submit" value="submit">Submit</button>
+    </form>
+
+  </div>
+
+</div>
+</body>
+</html>
